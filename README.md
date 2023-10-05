@@ -1,2 +1,3 @@
-# SoftUni-Software-Engineering
-Course Exercises SoftUni
+# SoftUni-Software-Engineering 
+Courses from the main program in SoftUni
+
