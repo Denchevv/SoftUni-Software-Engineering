@@ -4,8 +4,7 @@ int[] numbers = new int[n];
 
 for (int i = 0; i < n; i++)
 {
-    int newNumber = int.Parse(Console.ReadLine());
-    numbers[i] = newNumber;
+    numbers[i] = int.Parse(Console.ReadLine());
 }
 
 for (int i = numbers.Length - 1; i >= 0; i--)
