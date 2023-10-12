@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01DaysOfWeek", "01DaysOfWeek\01DaysOfWeek.csproj", "{52AEB2E0-A2A2-4210-B704-B287110CEA71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01DaysOfWeek", "01DaysOfWeek\01DaysOfWeek.csproj", "{52AEB2E0-A2A2-4210-B704-B287110CEA71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02PrintNumbersInReverseOrder", "02PrintNumbersInReverseOrder\02PrintNumbersInReverseOrder.csproj", "{E1DB45F4-F60B-46B5-9CA1-EC04B34E7A8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02PrintNumbersInReverseOrder", "02PrintNumbersInReverseOrder\02PrintNumbersInReverseOrder.csproj", "{E1DB45F4-F60B-46B5-9CA1-EC04B34E7A8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03RoundingNumbers", "03RoundingNumbers\03RoundingNumbers.csproj", "{75BE7226-D6DA-4F8C-A5FA-C1051DFCB09D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03RoundingNumbers", "03RoundingNumbers\03RoundingNumbers.csproj", "{75BE7226-D6DA-4F8C-A5FA-C1051DFCB09D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{2F8ED706-D885-4D3D-B7D2-4C068B426C13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08CondencedNumber", "Demo\08CondencedNumber.csproj", "{2F8ED706-D885-4D3D-B7D2-4C068B426C13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04ReverseArrayOfStrings", "04ReverseArrayOfStrings\04ReverseArrayOfStrings.csproj", "{1E334046-AC40-40D0-83CB-B13D6853CAA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04ReverseArrayOfStrings", "04ReverseArrayOfStrings\04ReverseArrayOfStrings.csproj", "{1E334046-AC40-40D0-83CB-B13D6853CAA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05SumEvenNumbers", "05SumEvenNumbers\05SumEvenNumbers.csproj", "{A1F7CFD2-D642-48EE-A569-C352CD9D92B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05SumEvenNumbers", "05SumEvenNumbers\05SumEvenNumbers.csproj", "{A1F7CFD2-D642-48EE-A569-C352CD9D92B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06EvenAndOddSubtraction", "06EvenAndOddSubtraction\06EvenAndOddSubtraction.csproj", "{AF89023C-0B8B-4B0A-B481-E8D888BFB58C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06EvenAndOddSubtraction", "06EvenAndOddSubtraction\06EvenAndOddSubtraction.csproj", "{AF89023C-0B8B-4B0A-B481-E8D888BFB58C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07EqualArrays", "07EqualArrays\07EqualArrays.csproj", "{DB081BD3-4FF0-4136-B5F5-B39A869C8435}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07EqualArrays", "07EqualArrays\07EqualArrays.csproj", "{DB081BD3-4FF0-4136-B5F5-B39A869C8435}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

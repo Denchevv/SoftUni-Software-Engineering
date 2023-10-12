@@ -1,6 +1,9 @@
 ﻿int[] originalArray = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+
 int finalResult = 0;
+
 int firstLength = originalArray.Length - 1;
+
 for (int i = 0; i < firstLength; i++)
 {
     int[] modifiedArray = new int[originalArray.Length - 1];
