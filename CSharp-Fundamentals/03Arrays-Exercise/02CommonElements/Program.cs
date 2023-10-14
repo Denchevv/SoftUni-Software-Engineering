@@ -1,15 +1,14 @@
-﻿string[] elements = Console.ReadLine().Split();
-string[] secondElements = Console.ReadLine().Split();
+﻿string[] firstArr = Console.ReadLine().Split();
+string[] secondArr = Console.ReadLine().Split();
 
-for (int i = 0; i < elements.Length; i++)
+for (int i = 0; i < secondArr.Length; i++)
 {
-    for (int j = 0; j < secondElements.Length; j++)
+    for (int j = 0; j < firstArr.Length; j++)
     {
-        if (secondElements[i] == elements[j])
+        if (secondArr[i] == firstArr[j])
         {
-            Console.Write($"{secondElements[i]} ");
+            Console.Write(secondArr[i] + " ");
+
         }
-
     }
-
 }

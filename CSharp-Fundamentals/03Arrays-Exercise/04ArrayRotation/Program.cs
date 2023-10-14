@@ -4,8 +4,9 @@
                 .ToArray();
 
 int rotations = int.Parse(Console.ReadLine());
+int realRotations = rotations % numbers.Length;
 
-for (int i = 0; i < rotations; i++)
+for (int i = 0; i < realRotations; i++)
 {
 
     int firstNum = numbers[0];
