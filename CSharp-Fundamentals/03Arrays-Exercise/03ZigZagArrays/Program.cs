@@ -9,8 +9,6 @@ for (int i = 0; i < n; i++)
 {
     string[] numbersArray = Console.ReadLine().Split();
 
-
-
     if (isFirstSelected)
     {
         firstArr[i] = numbersArray[0];
