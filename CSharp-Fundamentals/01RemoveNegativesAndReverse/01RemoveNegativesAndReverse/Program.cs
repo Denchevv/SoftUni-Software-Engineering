@@ -2,16 +2,23 @@
                                .Split()
                                .Select(int.Parse)
                                .ToList();
+List<int> positiveNumbers = new List<int>();
 
-numbers.RemoveAll(n => n < 0);
 
-if (numbers.Count == 0)
+for (int i = 0; i < numbers.Count; i++)
+{
+    if (numbers[i] > 0)
+    {
+        positiveNumbers.Add(numbers[i]);
+    }
+
+}
+if(positiveNumbers.Count == 0)
 {
     Console.WriteLine("empty");
 }
 else
 {
-    numbers.Reverse();
-    Console.WriteLine(string.Join(" ", numbers));
-
+    positiveNumbers.Reverse();
+    Console.WriteLine(string.Join(" ", positiveNumbers));
 }

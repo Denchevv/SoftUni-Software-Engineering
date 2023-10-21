@@ -13,6 +13,9 @@ namespace _05RemoveNegativesAndReverse
                                   .Split()
                                   .Select(int.Parse)
                                   .ToList();
+
+            List<int> result = numbers.ToList();
+
             while (true)
             {
                 string line = Console.ReadLine();
@@ -20,29 +23,33 @@ namespace _05RemoveNegativesAndReverse
                 {
                     break;
                 }
-                /* //4 19 2 53 6 43
-                 Add 3
-                 Remove 2
-                 RemoveAt 1
-                 Insert 8 3
-                 end  */
-                switch (line)
+                
+                string[] tokens = line.Split();
+                string command = tokens[0];
+
+                int number = int.Parse(tokens[1]);
+
+
+                switch (command)
                 {
                     case "Add":
-                        numbers.Add();
+
+                        result.Add(number);
                         break;
                     case "Remove":
-                        numbers.Add(3);
+                        result.Remove(number);
                         break;
-                    case "Add":
-                        numbers.Add(3);
+                    case "RemoveAt":
+                        result.RemoveAt(number);
                         break;
-                    case "Add":
-                        numbers.Add(3);
+                    case "Insert":
+                        int index = int.Parse(tokens[2]);
+                        result.Insert(index, number);
                         break;
                 }
-            }         
+            }
+            Console.WriteLine(string.Join(" ", result));
         }
-       
+
     }
 }
