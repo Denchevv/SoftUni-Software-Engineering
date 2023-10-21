@@ -5,16 +5,15 @@
         static void Main(string[] args)
         {
 
-            for (int i = 0; i < 4; i++)
+            string input = "hello";
+            string reversed = "";
+            foreach (char c in input)
             {
-                for (int j = 0; j < 4; j++)
-                {
-                    Console.Write(3 + " ");
-                }
-                Console.WriteLine();
+                reversed = c + reversed;
             }
+            Console.WriteLine(reversed); // Output: "olleh"
 
-            
+
         }
     }
 }
