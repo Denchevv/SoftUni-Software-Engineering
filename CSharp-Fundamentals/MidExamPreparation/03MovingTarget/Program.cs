@@ -4,10 +4,10 @@
     {
         static void Main()
         {
-            List<int> targets = Console.ReadLine()
-                                .Split()
-                                .Select(int.Parse)
-                                .ToList();
+                List<int> targets = Console.ReadLine()
+                                    .Split()
+                                    .Select(int.Parse)
+                                    .ToList();
 
             while (true)
             {
