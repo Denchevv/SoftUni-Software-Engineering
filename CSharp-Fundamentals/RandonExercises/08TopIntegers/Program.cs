@@ -12,21 +12,18 @@
 
             for (int i = 0; i < numbers.Length-1; i++)
             {
-                int currentNum = numbers[i];
-
                 for (int j = i + 1; j < numbers.Length; j++)
                 {
-                    int length = numbers.Length - 1;
-                    if (currentNum <= numbers[j])
+                    
+                    if (numbers[i]<= numbers[j])
                     {
                         break;
                     }
-                    else if (j == length)
+                    else if (j == numbers.Length-1)
                     {
                         Console.Write($"{numbers[i]} ");
                     }
                 }
-                
             }
             Console.WriteLine(numbers[numbers.Length-1]);
         }

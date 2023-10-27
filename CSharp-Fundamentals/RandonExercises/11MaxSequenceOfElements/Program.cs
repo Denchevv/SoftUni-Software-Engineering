@@ -1,44 +1,46 @@
 ﻿namespace _11MaxSequenceOfElements
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            int[] numbers = Console.ReadLine()
-                 .Split()
-                 .Select(int.Parse)
-                 .ToArray();
+            int[] firstArr = Console.ReadLine()
+                            .Split()
+                            .Select(int.Parse)
+                            .ToArray();
 
-            int[] result;
-
-            int lengthMeasure = 1;
-            int maxLength = int.MinValue;
-            int index = -1;
-
-            for (int i = 0; i < numbers.Length - 1; i++)
+            int maxLength = 1;
+            int currentLength = 1;
+            int index = 0;
+            int betterIndex = 0;
+            for (int i = 0; i < firstArr.Length - 1; i++)
             {
 
-                int currentNum = numbers[i];
-                int nextNum = numbers[i + 1];
-                if (currentNum == nextNum)
+                if (firstArr[i] == firstArr[i + 1])
                 {
-                    lengthMeasure++;
-                    if (lengthMeasure > maxLength)
+                    currentLength++;
+                    index = i;
+                    if (currentLength > maxLength)
                     {
-                        maxLength = lengthMeasure;
-                        index = i;
+                        maxLength = currentLength;
+                        betterIndex = i;
+                    }
+                    else if (currentLength == maxLength)
+                    {
+                        if (index < betterIndex)
+                        {
+                            betterIndex = i;
+                        }
                     }
                 }
                 else
                 {
-                    lengthMeasure = 1;
+                    currentLength = 1;
                 }
-
             }
             for (int i = 0; i < maxLength; i++)
             {
-                Console.Write($"{numbers[index]} ");
-
+                Console.Write($"{firstArr[betterIndex]} ");
             }
         }
     }
