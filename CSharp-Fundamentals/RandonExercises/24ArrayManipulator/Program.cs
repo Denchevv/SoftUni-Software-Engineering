@@ -1,4 +1,6 @@
-﻿namespace _24ArrayManipulator
+﻿using System.Threading.Tasks.Dataflow;
+
+namespace _24ArrayManipulator
 {
     internal class Program
     {
@@ -33,7 +35,7 @@
                         continue;
                     }
                     Exchange(numbers, rotationIndex);
-
+                    
                 }
                 else if (command == "max")
                 {
@@ -52,6 +54,8 @@
                     {
                         Console.WriteLine("No matches");
                     }
+                    Console.WriteLine(index);
+
                 }
                 else if (command == "min")
                 {
@@ -70,11 +74,17 @@
                         Console.WriteLine("No matches");
                         continue;
                     }
+                    Console.WriteLine(index);
                 }
                 // To do: First {count} even/odd
                 else if (command == "first")
                 {
                     int count = int.Parse(token[1]);
+                    if (count >= numbers.Length)
+                    {
+                        Console.WriteLine("Invalid count");
+                        continue;
+                    }
                     string oddOrEven = token[2];
 
                     int[] result = new int[0];
@@ -87,17 +97,20 @@
                     {
                         result = FirstCountEvenOdd(numbers, count, 0);
                     }
-                    /*   if (count >= numbers.Length)
-                       {
-                           Console.WriteLine("Invalid count");
-                           continue;
-                       }*/
+                    Console.WriteLine($"[{string.Join(", ", result)}]");
+
+
                 }
 
                 // To do: Last {count} even/odd 
                 else if (command == "last")
                 {
                     int count = int.Parse(token[1]);
+                    if (count >= numbers.Length)
+                    {
+                        Console.WriteLine("Invalid count");
+                        continue;
+                    }
                     string oddOrEven = token[2];
 
                     int[] result = new int[0];
@@ -110,12 +123,11 @@
                     {
                         result = LastCountEvenOdd(numbers, count, 0);
                     }
-                    Console.WriteLine(string.Join(" ", result));
+                    Console.WriteLine($"[{string.Join(", ", result)}]");
 
                 }
-
-
             }
+            Console.WriteLine($"[{string.Join(", ", numbers)}]");
         }
 
 

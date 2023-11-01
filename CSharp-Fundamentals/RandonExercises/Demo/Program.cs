@@ -1,4 +1,4 @@
-﻿using System.Security.Authentication;
+﻿
 using System.Linq;
 
 namespace Demo
@@ -7,17 +7,18 @@ namespace Demo
     {
         static void Main(string[] args)
         {
-            int[] numbers = { 1, 2, 3, 4, 5,6};
-            int[] reversedArray = new int[numbers.Length];
-            int counter = 0;
 
-            for (int i = numbers.Length - 1; i >= 0; i--)
+
+            if (1 % 2 == 0)
             {
-                reversedArray[counter] = numbers[i];
-                counter++;
+                Console.WriteLine();
             }
-            
-            Console.WriteLine(string.Join(" ", reversedArray));
-        }
+            {
+                Console.WriteLine(0%2);
+            }
+
+
+                //Console.WriteLine(string.Join(", ", list));
+            }
     }
 }
