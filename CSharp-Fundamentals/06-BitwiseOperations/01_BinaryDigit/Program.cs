@@ -20,7 +20,7 @@
                 }
                 resultNum = remainder + resultNum;
 
-                int result = number / 2;
+                number /= 2;
             }
             Console.WriteLine(counter);
             Console.WriteLine(resultNum);
