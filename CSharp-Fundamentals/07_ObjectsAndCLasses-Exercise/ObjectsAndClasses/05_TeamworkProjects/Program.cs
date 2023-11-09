@@ -39,7 +39,7 @@ namespace _05_TeamworkProjects
                     teams.Add(team);
                     Console.WriteLine($"Team {teamName} has been created by {creatorName}!");
                 }
-                else if (doesTeamExist == false)
+                else if (doesTeamExist)
                 {
                     Console.WriteLine($"Team {teamName} was already created!");
                 }
@@ -82,7 +82,7 @@ namespace _05_TeamworkProjects
             }
 
             List<Team> teamsWithMembers = teams.Where(x => x.Members.Count > 0)
-                                          .OrderByDescending(x => x.Members)
+                                          .OrderByDescending(x => x.Members.Count)
                                           .ThenBy(x => x.TeamName)
                                           .ToList();
             List<Team> teamWithoutMembers = teams.Where(x => x.Members.Count == 0)
@@ -92,8 +92,8 @@ namespace _05_TeamworkProjects
             foreach (Team team in teamsWithMembers)
             {
                 Console.WriteLine(team.TeamName);
-                Console.WriteLine($"-{team.CreatorName}");
-                Console.WriteLine(string.Join(Environment.NewLine, team.Members.Select(x=>$"--{x}")));
+                Console.WriteLine($"- {team.CreatorName}");
+                Console.WriteLine(string.Join(Environment.NewLine, team.Members.Select(x=>$"-- {x}")));
             }
 
             Console.WriteLine("Teams to disband:");
