@@ -89,7 +89,7 @@
             {
                 Console.WriteLine(team.TeamName);
                 Console.WriteLine($"- {team.CreatorName}");
-                Console.WriteLine(string.Join(Environment.NewLine, team.Members.Select(x => $"--{x}")));
+                Console.WriteLine(string.Join(Environment.NewLine, team.Members.Select(x => $"-- {x}")));
             }
             Console.WriteLine("Teams to disband:");
             foreach(Team team in teamWithoutMembers)
