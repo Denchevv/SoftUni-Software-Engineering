@@ -1,3 +1,3 @@
 # SoftUni-Software-Engineering 
-Courses from the main program in SoftUni
+Solved problems from the main program in SoftUni
 
