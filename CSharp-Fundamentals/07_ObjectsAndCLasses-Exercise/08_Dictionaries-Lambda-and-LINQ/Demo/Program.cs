@@ -1,29 +1,45 @@
-﻿namespace Demo
+﻿using System.Numerics;
+
+namespace Demo
 {
     public class Program
     {
         public static void Main()
         {
-            double[] numbers = Console.ReadLine()
-                    .Split()
-                    .Select(double.Parse)
-                    .ToArray();
+            string input = Console.ReadLine();
 
-            var count = new SortedDictionary<double, int> ();
-            
-            foreach (var number in numbers)
+            string result = "";
+
+            foreach (char digit in input)
             {
-                if (!count.ContainsKey(number))
+                if (char.IsDigit(digit))
                 {
-                    count[number] = 0;
+                    result += digit;
                 }
-                count[number]++;    
             }
-
-            foreach(var kvp in count)
+            BigInteger number = BigInteger.Parse(result);
+            BigInteger finalResult = 0;
+            while (true)
             {
-                Console.WriteLine($"{kvp.Key} -> {kvp.Value}");
+               
+                while (number > 0)
+                {
+                    BigInteger digit = number % 10;
+                    finalResult += digit;
+                    number /= 10;
+                }
+                if (finalResult <= 9)
+                {
+                    break;
+                }
+                else
+                {
+                    number = finalResult;
+                    finalResult = 0;
+                }
+
             }
+            Console.WriteLine(finalResult);
         }
     }
 }
