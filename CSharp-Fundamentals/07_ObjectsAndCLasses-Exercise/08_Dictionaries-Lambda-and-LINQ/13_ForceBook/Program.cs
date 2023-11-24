@@ -42,17 +42,22 @@ namespace _13_ForceBook
             }
 
             var filteredDict = nameSide.GroupBy(x => x.Value)
-                                       .ToDictionary(x => x.Key, x => x.ToDictionary(y => y.Key, y => y.Value)
-                                       .OrderByDescending(x => x.Value.Count())
-                                       .ThenBy(x => x.Key));
+                                       .ToDictionary(x => x.Key, x => x.ToDictionary(y => y.Key, y => y.Value))
+                                       .OrderByDescending(x => x.Value.Count)
+                                       .ThenBy(x => x.Key);
 
 
             foreach (var kvp in filteredDict)
             {
                 string side = kvp.Key;
-                var nameSideValue = kvp;
+                Dictionary<string, string> nameSideValue = kvp.Value;
 
-                foreach(var kvpValue in nameSideValue.)
+                Console.WriteLine($"Side {side}, Members: {nameSideValue.Count}");
+
+                foreach (var kvpValue in nameSideValue.OrderBy(x => x.Key))
+                {
+                    Console.WriteLine($"! {kvpValue.Key}");
+                }
 
             }
 

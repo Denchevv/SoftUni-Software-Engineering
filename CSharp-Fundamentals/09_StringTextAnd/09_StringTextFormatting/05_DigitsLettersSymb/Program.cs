@@ -26,8 +26,9 @@ namespace _05_DigitsLettersSymb
                     others.Append(symb);
                 }
             }
-            Console.WriteLine(letters);
+
             Console.WriteLine(digits);
+            Console.WriteLine(letters);
             Console.WriteLine(others);
         }
     }

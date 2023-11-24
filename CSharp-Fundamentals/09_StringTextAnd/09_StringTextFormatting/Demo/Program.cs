@@ -1,13 +1,25 @@
 ﻿namespace Demo
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            string text = "Hello, World!";
+            char letter = char.Parse(Console.ReadLine()); // Replace 'C' with the letter you want to find the position of
+            int position = GetAlphabetPosition(letter);
 
-            int indexOf = text.IndexOf("p");
-            Console.WriteLine(indexOf);
+            Console.WriteLine($"The position of '{letter}' in the alphabet is: {position}");
+        }
+
+        public static int GetAlphabetPosition(char letter)
+        {
+            // Convert the letter to uppercase to handle both uppercase and lowercase letters
+            char upperCaseLetter = char.ToUpper(letter);
+
+            // Get the ASCII value of 'A' and subtract it from the ASCII value of the letter
+            int position = upperCaseLetter - 'A' + 1;
+
+            return position;
         }
     }
+
 }
