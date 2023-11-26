@@ -1,5 +1,7 @@
 ﻿namespace _19_WinningTicket2
 {
+    // Cash$$$$$$Ca$$$$$$sh
+    // Check solution again missing something 
     public class Program
     {
         public static void Main()
