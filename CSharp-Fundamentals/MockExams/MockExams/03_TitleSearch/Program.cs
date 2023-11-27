@@ -9,37 +9,41 @@ namespace _03_TitleSearch
             string originalText = Console.ReadLine();
             int range = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < range; i++)
-            {
-                string input = Console.ReadLine();
-
-                bool containsText = DoesContainTheText(originalText, input);
-
-                if (containsText)
+          
+                for (int i = 0; i < range; i++)
                 {
-                    originalText = RemoveTheText(originalText, input);
+                    string input = Console.ReadLine();
 
-                    Console.WriteLine(originalText);
-                    
-                }
-                else
-                {
-                    Console.WriteLine("No such title found!");
+                    bool containsText = DoesContainTheSequence(originalText, input);
+
+                    if (containsText)
+                    {
+                        originalText = RemoveTheText(originalText, input);
+
+                        Console.WriteLine(originalText);
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("No such title found!");
+                    }
                 }
             }
-        }
 
         private static string RemoveTheText(string originalText, string input)
         {
-            for (int i = 0;i < input.Length;i++)
+            int startIndex = 0;
+
+            for (int i = 0; i < input.Length; i++)
             {
                 char currentSymb = input[i];
-                for(int j = 0;j < originalText.Length; j++)
+                for (int j = startIndex; j < originalText.Length; j++)
                 {
                     char orignalSymb = originalText[j];
-                    if(currentSymb == orignalSymb)
+                    if (currentSymb == orignalSymb)
                     {
                         originalText = originalText.Remove(j, 1);
+                        startIndex = j;
                         break;
                     }
                 }
@@ -47,21 +51,26 @@ namespace _03_TitleSearch
             return originalText;
         }
 
-        private static bool DoesContainTheText(string originalText, string input)
+        private static bool DoesContainTheSequence(string originalText, string input)
         {
-           
+            int startPosition = 0;
+            string result = string.Empty;
+
             for (int j = 0; j < input.Length; j++)
             {
                 char letter = input[j];
-
-                if (!originalText.Contains(letter))
+                for (int k = startPosition; k < originalText.Length; k++)
                 {
-                    return false;
+                    char currentLetter = originalText[k];
+                    if (currentLetter == letter)
+                    {
+                        startPosition = k;
+                        result += currentLetter;
+                        break;
+                    }
                 }
             }
-            return true;
+            return result == input ? true : false;
         }
     }
 }
-
-//UNIFISHED
