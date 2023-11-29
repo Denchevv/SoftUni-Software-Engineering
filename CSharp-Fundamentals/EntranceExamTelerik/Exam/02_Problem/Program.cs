@@ -29,11 +29,11 @@ namespace _02_Problem
             {
                 result = "field";
             }
-            else if (isPascal && input.Length >= 2)
+            else if (isPascal)
             {
                 result = "pascal";
             }
-            else if (isElephant && input.Length >= 2)
+            else if (isElephant)
             {
                 result = "elephant";
             }
