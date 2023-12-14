@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minions", "Lab-Demo\Minions.csproj", "{700CDD2C-72B9-471D-A3DD-02156997AA4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{700CDD2C-72B9-471D-A3DD-02156997AA4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700CDD2C-72B9-471D-A3DD-02156997AA4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700CDD2C-72B9-471D-A3DD-02156997AA4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700CDD2C-72B9-471D-A3DD-02156997AA4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {096C4EF7-27B5-43D4-ABD9-B17D3D1296F0}
+	EndGlobalSection
+EndGlobal

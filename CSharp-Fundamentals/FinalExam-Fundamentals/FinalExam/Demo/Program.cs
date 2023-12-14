@@ -7,10 +7,19 @@ namespace Demo
     {
         public static void Main()
         {
-            int a = 5;
-            int b = a++;
-            int c = ++a;
-            Console.WriteLine(c);
+            int range = int.Parse(Console.ReadLine());
+
+            int sum = 0;
+
+            for (int i = 0; i < range; i++)
+            {
+                char symbol = char.Parse(Console.ReadLine());
+
+                int inDigits = symbol;
+
+                sum += inDigits;
+            }
+            Console.WriteLine($"The sum equals: {sum}");
         }
        
     }

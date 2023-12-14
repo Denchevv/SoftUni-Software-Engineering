@@ -1,0 +1,35 @@
+﻿@model List<CalculatorApp.Models.Calculator>
+
+    <h2>History</h2>
+
+@foreach(var calculator in Model)
+{
+    <div>
+        <div class="form-group">
+            <div class="col-sm-1">
+                @calculator.LeftOperand
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-1">
+                @calculator.Operator
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-1">
+                @calculator.RightOperand
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-1 ">
+                <p>=</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-1">
+                @calculator.Result
+            </div>
+        </div>
+    </div><br />
+   
+}
