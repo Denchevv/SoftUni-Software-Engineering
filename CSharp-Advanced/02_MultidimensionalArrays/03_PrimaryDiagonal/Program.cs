@@ -25,10 +25,10 @@ namespace _03_PrimaryDiagonal
             for (int row = 0; row < matrix.GetLength(0) - 1; row++)
             {
                 int currentSum = 0;
-                for(int col = 0;col < matrix.GetLength(1) - 1; col++)
+                for (int col = 0; col < matrix.GetLength(1) - 1; col++)
                 {
                     currentSum = matrix[row, col] + matrix[row, col + 1] +
-                        matrix[row +1, col] + matrix[row+1, col + 1];
+                        matrix[row + 1, col] + matrix[row + 1, col + 1];
 
                     if (currentSum > maxSum)
                     {
@@ -36,18 +36,12 @@ namespace _03_PrimaryDiagonal
                         mxRow = row;
                         mxCol = col;
                     }
-                }   
-            }
-
-            for (int row = mxRow; row <= mxRow+1; row++)
-            {
-                for (int col = mxCol; col <= mxCol+1; col++) 
-                {
-                    Console.Write(matrix[row,col] + " ");
                 }
-                Console.WriteLine();
             }
 
+
+            Console.WriteLine($"{matrix[mxRow, mxCol]} {matrix[mxRow, mxCol+1]}");
+            Console.WriteLine($"{matrix[mxRow+1, mxCol]} {matrix[mxRow+1, mxCol+1]}");
             Console.WriteLine(maxSum);
 
 
