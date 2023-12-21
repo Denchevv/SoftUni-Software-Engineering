@@ -47,7 +47,6 @@
             }
            
         }
-
         private static int[] ReadArr()
         {
             return Console.ReadLine()

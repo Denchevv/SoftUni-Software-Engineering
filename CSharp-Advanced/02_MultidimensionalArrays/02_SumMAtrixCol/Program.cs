@@ -29,8 +29,6 @@
 
                 Console.WriteLine(sum);
             }
-
-
         }
 
         private static int[] ReadArray()

@@ -11,6 +11,7 @@
             for (int row = 0; row < matrix.GetLength(0); row++)
             {
                 int[] arr = ReadArray();
+
                 for (int col = 0; col < matrix.GetLength(1); col++)
                 {
                     matrix[row, col] = arr[col];
@@ -23,14 +24,6 @@
             {
                 diagonalSum += matrix[row, row];
             }
-
-          /*  for (int row = 0; row < size; row++)
-            {
-                for (int col = row;col < row + 1; col++)
-                {
-                    diagonalSum += matrix[row, col];               
-                }
-            }*/
 
                 Console.WriteLine(diagonalSum);
         }

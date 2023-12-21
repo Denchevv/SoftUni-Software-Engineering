@@ -15,7 +15,6 @@ namespace _10_SquaresInMatrix
 
             for (int i = 0; i < sizes[0] - 1; i++)
             {
-
                 for (int j = 0; j < sizes[1] - 1; j++)
                 {
                     if (matrix[i, j] == matrix[i, j + 1] &&
@@ -28,7 +27,6 @@ namespace _10_SquaresInMatrix
             }
 
             Console.WriteLine(counter);
-
         }
 
         private static char[,] ReadMatrix(int size1, int size2)
@@ -45,7 +43,6 @@ namespace _10_SquaresInMatrix
             }
             return matrix;
         }
-
         public static char[] ReadArray()
         {
             return Console.ReadLine()

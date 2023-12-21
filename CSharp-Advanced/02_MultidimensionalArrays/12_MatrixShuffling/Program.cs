@@ -17,7 +17,7 @@
             }
 
             string input;
-            while((input = Console.ReadLine().ToUpper()) != "END") 
+            while ((input = Console.ReadLine().ToUpper()) != "END")
             {
                 string[] tokens = input.Split();
 
@@ -29,12 +29,6 @@
                     int row2 = int.Parse(tokens[3]);
                     int col2 = int.Parse(tokens[4]);
 
-                    //if (row1 >= matrix.GetLength(0) || row1 < 0 || col1 >= matrix.GetLength(1) || col1 < 0 ||
-                    //    row2 >= matrix.GetLength(0) || row2 < 0 || col2 >= matrix.GetLength(1) || col2 < 0)
-                    //{
-                    //    Console.WriteLine("Invalid input!");
-                    //    continue;
-                    //}
                     if (row1 >= 0 && row1 < matrix.GetLength(0) && col1 >= 0 && col2 < matrix.GetLength(1) &&
                         row2 >= 0 && row2 < matrix.GetLength(0) && col2 >= 0 && col2 < matrix.GetLength(1))
                     {
@@ -54,9 +48,9 @@
                         continue;
                     }
                 }
-                        Console.WriteLine("Invalid input!");
-            }
 
+                Console.WriteLine("Invalid input!");
+            }
         }
         private static int[] ReadArr()
         {
