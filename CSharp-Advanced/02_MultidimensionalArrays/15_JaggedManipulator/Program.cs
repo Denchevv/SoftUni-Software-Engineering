@@ -17,7 +17,7 @@
 
             for (int i = 0; i < jagged.Length - 1; i++)
             {
-                
+
                 if (jagged[i].Length == jagged[i + 1].Length)
                 {
                     for (int col = 0; col <= jagged[i].Length - 1; col++)
@@ -77,7 +77,6 @@
             {
                 Console.WriteLine(string.Join(" ", arr));
             }
-
         }
         private static int[] ReadArray()
         {

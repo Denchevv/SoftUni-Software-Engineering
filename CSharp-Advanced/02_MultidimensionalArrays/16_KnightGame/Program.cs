@@ -18,8 +18,8 @@ namespace _16_KnightGame
                 }
             }
 
-            int removedKnights = CountOfRemovedKnights(board, n);
-            Console.WriteLine(removedKnights);
+
+            
         }
 
         private static int CountOfRemovedKnights(char[,] board, int n)
