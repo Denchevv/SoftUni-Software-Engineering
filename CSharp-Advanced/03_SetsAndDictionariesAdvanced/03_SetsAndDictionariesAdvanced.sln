@@ -5,25 +5,33 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_SameValues", "01_SameValues\01_SameValues.csproj", "{AEA999FB-34B4-4E6C-A4B2-C9D611B5EAE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_AverageStudentGrades", "02_AverageStudentGrades\02_AverageStudentGrades.csproj", "{13B18F95-95CA-4A87-B486-F2D7D61AD65F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_AverageStudentGrades", "02_AverageStudentGrades\02_AverageStudentGrades.csproj", "{13B18F95-95CA-4A87-B486-F2D7D61AD65F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_ProductShop", "03_ProductShop\03_ProductShop.csproj", "{7949DA15-A02B-4691-BA0C-B665081C67BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_ProductShop", "03_ProductShop\03_ProductShop.csproj", "{7949DA15-A02B-4691-BA0C-B665081C67BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Cities", "04_Cities\04_Cities.csproj", "{AD7A31BE-F46D-475D-B923-30F721EF260A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_Cities", "04_Cities\04_Cities.csproj", "{AD7A31BE-F46D-475D-B923-30F721EF260A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_6ParkingLot", "05_6ParkingLot\05_6ParkingLot.csproj", "{55388374-1EBA-4B15-8980-D9DEB8931DE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_6ParkingLot", "05_6ParkingLot\05_6ParkingLot.csproj", "{55388374-1EBA-4B15-8980-D9DEB8931DE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_ParkigLot", "06_ParkigLot\06_ParkigLot.csproj", "{FAEC6B77-84BB-48F3-9A6F-BBB696041164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_ParkigLot", "06_ParkigLot\06_ParkigLot.csproj", "{FAEC6B77-84BB-48F3-9A6F-BBB696041164}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_SoftUniParty", "07_SoftUniParty\07_SoftUniParty.csproj", "{41BE3BCA-5E47-4841-8562-35D71E564F83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_SoftUniParty", "07_SoftUniParty\07_SoftUniParty.csproj", "{41BE3BCA-5E47-4841-8562-35D71E564F83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_CitiesByCountries", "08_CitiesByCountries\08_CitiesByCountries.csproj", "{63C3EFEF-6514-4148-8B4D-BE709CA4A31B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_CitiesByCountries", "08_CitiesByCountries\08_CitiesByCountries.csproj", "{63C3EFEF-6514-4148-8B4D-BE709CA4A31B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_UniqueUsernames", "09_UniqueUsernames\09_UniqueUsernames.csproj", "{3EC21818-93C1-4D4D-8099-CE797B82CB29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_UniqueUsernames", "09_UniqueUsernames\09_UniqueUsernames.csproj", "{3EC21818-93C1-4D4D-8099-CE797B82CB29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_SetsOfElements", "10_SetsOfElements\10_SetsOfElements.csproj", "{4763D03E-B4ED-4CD8-84EE-B0A54D5C33F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_SetsOfElements", "10_SetsOfElements\10_SetsOfElements.csproj", "{4763D03E-B4ED-4CD8-84EE-B0A54D5C33F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_PeriodicTable", "11_PeriodicTable\11_PeriodicTable.csproj", "{3C508FA8-C2B5-43DC-8F32-DEB979167359}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_PeriodicTable", "11_PeriodicTable\11_PeriodicTable.csproj", "{3C508FA8-C2B5-43DC-8F32-DEB979167359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_EvenTimes", "12_EvenTimes\12_EvenTimes.csproj", "{84D998D0-B7CF-4F2B-91DC-E5AAF4FE3DA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_Count_Symbols", "13_Count_Symbols\13_Count_Symbols.csproj", "{193448A0-D05E-42BC-9D18-D94DD6CB030A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_Wardrobe", "14_Wardrobe\14_Wardrobe.csproj", "{D7A1999B-B63B-4D19-8D48-3B6957278D4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_TheV-Logger", "15_TheV-Logger\15_TheV-Logger.csproj", "{05848D1A-FDD3-4025-9215-8159704955CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +83,22 @@ Global
 		{3C508FA8-C2B5-43DC-8F32-DEB979167359}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C508FA8-C2B5-43DC-8F32-DEB979167359}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C508FA8-C2B5-43DC-8F32-DEB979167359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D998D0-B7CF-4F2B-91DC-E5AAF4FE3DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D998D0-B7CF-4F2B-91DC-E5AAF4FE3DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D998D0-B7CF-4F2B-91DC-E5AAF4FE3DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D998D0-B7CF-4F2B-91DC-E5AAF4FE3DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193448A0-D05E-42BC-9D18-D94DD6CB030A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193448A0-D05E-42BC-9D18-D94DD6CB030A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193448A0-D05E-42BC-9D18-D94DD6CB030A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193448A0-D05E-42BC-9D18-D94DD6CB030A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7A1999B-B63B-4D19-8D48-3B6957278D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7A1999B-B63B-4D19-8D48-3B6957278D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7A1999B-B63B-4D19-8D48-3B6957278D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7A1999B-B63B-4D19-8D48-3B6957278D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05848D1A-FDD3-4025-9215-8159704955CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05848D1A-FDD3-4025-9215-8159704955CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05848D1A-FDD3-4025-9215-8159704955CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05848D1A-FDD3-4025-9215-8159704955CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
