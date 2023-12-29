@@ -11,7 +11,6 @@ namespace _13_Count_Symbols
             SortedDictionary<char, int> occurances = new SortedDictionary<char, int>();
             FillDictionary(occurances, text);
             PrintResult(occurances);
-
         }
 
          static void PrintResult(SortedDictionary<char, int> occurances)
@@ -30,7 +29,6 @@ namespace _13_Count_Symbols
                 {
                     occurances.Add(letter, 0);
                 }
-
                 occurances[letter]++;
             }
         }

@@ -57,7 +57,7 @@ namespace _15_TheV_Logger
 
                 if (vloggers[kvp.Key].Count > 0)
                 {
-                    foreach(string follower in vloggers[kvp.Key].OrderBy(x => x))
+                    foreach (string follower in vloggers[kvp.Key].OrderBy(x => x))
                     {
                         Console.WriteLine($"* {follower}");
                     }
@@ -71,18 +71,15 @@ namespace _15_TheV_Logger
                 Console.WriteLine($"{count}. {kvp.Key} : {kvp.Value[0]} followers, {kvp.Value[1]} following");
                 count++;
             }
-
-
+        }
+        private static bool IsItValid(Dictionary<string, List<string>> vloggers,
+            string vloggerName, string vloggerFollowed)
+        {
+            return (vloggers.ContainsKey(vloggerName)
+                  && vloggers.ContainsKey(vloggerFollowed)
+                  && vloggerFollowed != vloggerName
+                  && vloggers[vloggerFollowed].Contains(vloggerName) == false);
 
         }
-    private static bool IsItValid(Dictionary<string, List<string>> vloggers,
-        string vloggerName, string vloggerFollowed)
-    {
-        return (vloggers.ContainsKey(vloggerName)
-              && vloggers.ContainsKey(vloggerFollowed)
-              && vloggerFollowed != vloggerName
-              && vloggers[vloggerFollowed].Contains(vloggerName) == false);
-
     }
-}
 }

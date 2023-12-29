@@ -12,15 +12,13 @@ namespace _12_EvenTimes
 
             FillTheDictionary(numbersRepetition, n);
             PrintOutput(numbersRepetition);
-
         }
 
         static void PrintOutput(Dictionary<int, int> numbersRepetition)
         {
             foreach (var kvp in numbersRepetition.Where(x => x.Value % 2 == 0))
             {
-                    Console.WriteLine(kvp.Key);
-                
+                Console.WriteLine(kvp.Key);
             }
         }
         static void FillTheDictionary(Dictionary<int, int> numbersRepetition, int n)
@@ -35,7 +33,7 @@ namespace _12_EvenTimes
                 }
                 else
                 {
-                numbersRepetition.Add(number, 1);
+                    numbersRepetition.Add(number, 1);
                 }
             }
         }
