@@ -13,7 +13,6 @@
 
             Console.WriteLine(numbers.Length);
             Console.WriteLine(numbers.Sum());
-
         }
     }
 }
